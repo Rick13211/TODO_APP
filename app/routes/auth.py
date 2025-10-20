@@ -26,3 +26,6 @@ def logout():
   flash('Logged Out','info')
   return redirect(url_for('auth.login'))
 
+@auth_bp.route('/register',methods=['POST','GET'])
+def register():
+  return

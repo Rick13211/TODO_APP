@@ -8,7 +8,7 @@ tasks_bp = Blueprint('tasks',__name__)
 @tasks_bp.route('/')
 def view_tasks():
   if 'user' not in session:
-    return redirect(url_for('auth/login'))
+    return redirect(url_for('auth.login'))
   
   tasks = Task.query.all()
   return render_template('tasks.html',tasks=tasks)
