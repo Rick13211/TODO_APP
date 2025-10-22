@@ -2,6 +2,7 @@
 {% block title %} Tasks - TODO App {% endblock %}
 
 {% block content %}
+
   <div class="task-box">
     <h2>Your Tasks</h2>
     <form action="{{ url_for('tasks.add_task') }}" method="post" class="task-form">
